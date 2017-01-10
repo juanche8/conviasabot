@@ -21,6 +21,7 @@ Public Class Form1
 
         Dim writer As New StreamWriter("D:\Juan Jose\Escritorio\test\conviasa-bot \config.js")
         writer.Write(content)
-        writer.Close()
+        writer.Close() ' comments
+        Dim consola As string
     End Sub
 End Class
