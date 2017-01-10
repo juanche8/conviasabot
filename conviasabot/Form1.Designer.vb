@@ -29,7 +29,7 @@ Partial Class Form1
         '
         'mailbox
         '
-        Me.mailbox.Location = New System.Drawing.Point(149, 39)
+        Me.mailbox.Location = New System.Drawing.Point(154, 42)
         Me.mailbox.Name = "mailbox"
         Me.mailbox.Size = New System.Drawing.Size(233, 20)
         Me.mailbox.TabIndex = 0
@@ -45,7 +45,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(253, 66)
+        Me.Button1.Location = New System.Drawing.Point(258, 69)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(129, 23)
         Me.Button1.TabIndex = 2
