@@ -1,2 +1,4 @@
 # conviasabot
-convibots
+GUI-Setup index.js 
+->set Mail
+->set DateRange
