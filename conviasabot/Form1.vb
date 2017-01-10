@@ -12,7 +12,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim reader As New StreamReader("C:\Users\juanyoris\Documents\GitHub\conviasa-bot\config2.js")
+        Dim reader As New StreamReader("C:\Users\juanyoris\Documents\GitHub\conviasa-bot\config2.js") 'directorio de prueba. podra ser un reader global.
         Dim content As String = reader.ReadToEnd()
         reader.Close()
        
