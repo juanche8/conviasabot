@@ -25,6 +25,7 @@ Partial Class Form1
         Me.mailbox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout
         '
         'mailbox
@@ -37,7 +38,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = true
-        Me.Label1.Location = New System.Drawing.Point(79, 42)
+        Me.Label1.Location = New System.Drawing.Point(82, 21)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(32, 13)
         Me.Label1.TabIndex = 1
@@ -52,11 +53,20 @@ Partial Class Form1
         Me.Button1.Text = "change!"
         Me.Button1.UseVisualStyleBackColor = true
         '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(45, 98)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(462, 367)
+        Me.RichTextBox1.TabIndex = 3
+        Me.RichTextBox1.Text = ""
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(456, 261)
+        Me.ClientSize = New System.Drawing.Size(574, 494)
+        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.mailbox)
@@ -70,4 +80,5 @@ End Sub
     Friend WithEvents mailbox As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents RichTextBox1 As RichTextBox
 End Class
