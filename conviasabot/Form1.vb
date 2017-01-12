@@ -18,7 +18,7 @@ Public Class Form1
                 content = Regex.Replace(content, lineas(6), replacetext)
                Dim writer As New StreamWriter("C:\Users\juanyoris\Documents\GitHub\conviasa-bot\config2.js")
         writer.Write(content)
-        writer.Close() ' comments push test 2
+        writer.Close()
          End Sub
     Function ValidateEmail(ByVal email As String) As Boolean
         Dim emailRegex As New System.Text.RegularExpressions.Regex(
