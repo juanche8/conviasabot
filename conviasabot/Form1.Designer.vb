@@ -27,24 +27,26 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TabNavigationPage3 = New DevExpress.XtraBars.Navigation.TabNavigationPage()
         Me.TabNavigationPage2 = New DevExpress.XtraBars.Navigation.TabNavigationPage()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.DateEdit1 = New DevExpress.XtraEditors.DateEdit()
-        Me.DateEdit2 = New DevExpress.XtraEditors.DateEdit()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.DateEdit2 = New DevExpress.XtraEditors.DateEdit()
+        Me.DateEdit1 = New DevExpress.XtraEditors.DateEdit()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.TabNavigationPage1 = New DevExpress.XtraBars.Navigation.TabNavigationPage()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.mailbox = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.mailbox = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.TabPane1 = New DevExpress.XtraBars.Navigation.TabPane()
         Me.DefaultLookAndFeel1 = New DevExpress.LookAndFeel.DefaultLookAndFeel(Me.components)
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.TabNavigationPage3.SuspendLayout
         Me.TabNavigationPage2.SuspendLayout
-        CType(Me.DateEdit1.Properties.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.DateEdit1.Properties,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.DateEdit2.Properties.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.DateEdit2.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.DateEdit1.Properties.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.DateEdit1.Properties,System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabNavigationPage1.SuspendLayout
         CType(Me.TabPane1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabPane1.SuspendLayout
@@ -61,6 +63,7 @@ Partial Class Form1
         'TabNavigationPage3
         '
         Me.TabNavigationPage3.Caption = "TabNavigationPage3"
+        Me.TabNavigationPage3.Controls.Add(Me.Button3)
         Me.TabNavigationPage3.Name = "TabNavigationPage3"
         Me.TabNavigationPage3.Size = New System.Drawing.Size(644, 182)
         '
@@ -77,34 +80,24 @@ Partial Class Form1
         Me.TabNavigationPage2.Name = "TabNavigationPage2"
         Me.TabNavigationPage2.Size = New System.Drawing.Size(644, 182)
         '
-        'Label3
+        'Label6
         '
-        Me.Label3.AutoSize = true
-        Me.Label3.Location = New System.Drawing.Point(296, 44)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(38, 13)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Hasta:"
+        Me.Label6.AutoSize = true
+        Me.Label6.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label6.Location = New System.Drawing.Point(15, 7)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(212, 16)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Selecciona un rango de fechas"
         '
-        'Label2
+        'Button2
         '
-        Me.Label2.AutoSize = true
-        Me.Label2.Location = New System.Drawing.Point(114, 44)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(41, 13)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Desde:"
-        '
-        'DateEdit1
-        '
-        Me.DateEdit1.EditValue = Nothing
-        Me.DateEdit1.Location = New System.Drawing.Point(161, 41)
-        Me.DateEdit1.Name = "DateEdit1"
-        Me.DateEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.DateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
-        Me.DateEdit1.Properties.Mask.EditMask = "yyyyMMdd1200"
-        Me.DateEdit1.Size = New System.Drawing.Size(116, 20)
-        Me.DateEdit1.TabIndex = 6
+        Me.Button2.Location = New System.Drawing.Point(402, 114)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Set!"
+        Me.Button2.UseVisualStyleBackColor = true
         '
         'DateEdit2
         '
@@ -117,14 +110,34 @@ Partial Class Form1
         Me.DateEdit2.Size = New System.Drawing.Size(137, 20)
         Me.DateEdit2.TabIndex = 7
         '
-        'Button2
+        'DateEdit1
         '
-        Me.Button2.Location = New System.Drawing.Point(402, 114)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "Set!"
-        Me.Button2.UseVisualStyleBackColor = true
+        Me.DateEdit1.EditValue = Nothing
+        Me.DateEdit1.Location = New System.Drawing.Point(161, 41)
+        Me.DateEdit1.Name = "DateEdit1"
+        Me.DateEdit1.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.DateEdit1.Properties.Mask.EditMask = "yyyyMMdd1200"
+        Me.DateEdit1.Size = New System.Drawing.Size(116, 20)
+        Me.DateEdit1.TabIndex = 6
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = true
+        Me.Label2.Location = New System.Drawing.Point(114, 44)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(41, 13)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Desde:"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = true
+        Me.Label3.Location = New System.Drawing.Point(296, 44)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(38, 13)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "Hasta:"
         '
         'TabNavigationPage1
         '
@@ -136,21 +149,15 @@ Partial Class Form1
         Me.TabNavigationPage1.Name = "TabNavigationPage1"
         Me.TabNavigationPage1.Size = New System.Drawing.Size(644, 182)
         '
-        'Button1
+        'Label5
         '
-        Me.Button1.Location = New System.Drawing.Point(497, 108)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(82, 23)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "change!"
-        Me.Button1.UseVisualStyleBackColor = true
-        '
-        'mailbox
-        '
-        Me.mailbox.Location = New System.Drawing.Point(346, 64)
-        Me.mailbox.Name = "mailbox"
-        Me.mailbox.Size = New System.Drawing.Size(233, 20)
-        Me.mailbox.TabIndex = 0
+        Me.Label5.AutoSize = true
+        Me.Label5.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label5.Location = New System.Drawing.Point(46, 19)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(281, 16)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Ingresa tu mail para recibir notificaciones"
         '
         'Label1
         '
@@ -161,6 +168,22 @@ Partial Class Form1
         Me.Label1.Size = New System.Drawing.Size(38, 15)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Email"
+        '
+        'mailbox
+        '
+        Me.mailbox.Location = New System.Drawing.Point(346, 64)
+        Me.mailbox.Name = "mailbox"
+        Me.mailbox.Size = New System.Drawing.Size(233, 20)
+        Me.mailbox.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(497, 108)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(82, 23)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "change!"
+        Me.Button1.UseVisualStyleBackColor = true
         '
         'TabPane1
         '
@@ -181,25 +204,14 @@ Partial Class Form1
         '
         Me.DefaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Dark"
         '
-        'Label5
+        'Button3
         '
-        Me.Label5.AutoSize = true
-        Me.Label5.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label5.Location = New System.Drawing.Point(46, 19)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(281, 16)
-        Me.Label5.TabIndex = 3
-        Me.Label5.Text = "Ingresa tu mail para recibir notificaciones"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = true
-        Me.Label6.Font = New System.Drawing.Font("MS Reference Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label6.Location = New System.Drawing.Point(15, 7)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(212, 16)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Selecciona un rango de fechas"
+        Me.Button3.Location = New System.Drawing.Point(211, 64)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(180, 61)
+        Me.Button3.TabIndex = 0
+        Me.Button3.Text = "Check!"
+        Me.Button3.UseVisualStyleBackColor = true
         '
         'Form1
         '
@@ -211,12 +223,13 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "B0tConfig"
+        Me.TabNavigationPage3.ResumeLayout(false)
         Me.TabNavigationPage2.ResumeLayout(false)
         Me.TabNavigationPage2.PerformLayout
-        CType(Me.DateEdit1.Properties.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.DateEdit1.Properties,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.DateEdit2.Properties.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.DateEdit2.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.DateEdit1.Properties.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.DateEdit1.Properties,System.ComponentModel.ISupportInitialize).EndInit
         Me.TabNavigationPage1.ResumeLayout(false)
         Me.TabNavigationPage1.PerformLayout
         CType(Me.TabPane1,System.ComponentModel.ISupportInitialize).EndInit
@@ -240,4 +253,5 @@ End Sub
     Friend WithEvents DefaultLookAndFeel1 As DevExpress.LookAndFeel.DefaultLookAndFeel
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents Button3 As Button
 End Class
